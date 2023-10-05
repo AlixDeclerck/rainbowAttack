@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "generate two files with password and hash of password"
+g++ ../resources/sha256.cpp ../resources/gen-passwd.cpp -o binary1
+./binary1 100 8 8 /tmp/password_clear /tmp/password_hash
+rm binary1
